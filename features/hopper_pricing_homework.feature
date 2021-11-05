@@ -22,15 +22,15 @@ Feature: As a User I want to test the Hopper AppX application for hotel pricing
 
 
   @hopper_hotel_pricing_02
-  Scenario: Verify that the ci hotel tapped enter blooking flow has a daily mark up excluding taxes fees same as mark up from cover    
+  Scenario: Verify that the ci hotel tapped enter booking flow has a daily markup excluding taxes fees same as markup from cover    
     When I select "view rooms"
     Then I verify "first rate on room" is matching with "scratch out pricing" in "app"
-      And I verify "daily mark up excluding taxes fees" is matching with "mark up from cover" in "dashboard"
+      And I verify "daily markup excluding taxes fees" is matching with "mark up from cover" in "dashboard"
       And I select "best available rate" from the "room screen"
-      And I verify "daily mark up excluding taxes fees" is matching with "daily_markup_excluding_taxes_fees_usd" in "dashboard"
+      And I verify "daily markup excluding taxes fees" is matching with "daily_markup_excluding_taxes_fees_usd" in "dashboard"
       And I select "different room type" from the "room screen"
-      And I verify "daily mark up excluding taxes fees" is matching with "daily_markup_equation" in "dashboard"
+      And I verify "daily markup excluding taxes fees" is matching with "daily_markup_equation" in "dashboard"
       And I click on "continue" to checkout screen
-      And I verify "daily mark up excluding taxes fees" is matching with "daily_markup_equation" in "dashboard" 
+      And I verify "daily markup excluding taxes fees" is matching with "daily_markup_equation" in "dashboard" 
       And I make the payment
-      And I verify "daily mark up excluding taxes fees" is matching with "daily_markup_equation" in "dashboard" 
+      And I verify "daily markup excluding taxes fees" is matching with "daily_markup_equation" in "dashboard" 
